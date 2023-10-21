@@ -3,27 +3,37 @@ using UnityEngine;
 public class MoveSystemPuzzle_sc : MonoBehaviour
 {
     [SerializeField] GameObject correctForm;
+    [SerializeField] CompletePuzzle_sc completePuzzle;
     bool moving;
+    bool finish;
 
     float startPosX;
     float startPosY;
 
     Vector3 resetPosition;
+
+    //AudioSource completionSound;
+    //AudioSource errorSound;
+
     void Start()
     {
-        resetPosition = transform.localPosition;
+        resetPosition = transform.position;
     }
 
     void Update()
     {
-        if (moving)
+        if (!finish)
         {
-            Vector3 mousePos;
-            mousePos = Input.mousePosition;
-            mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            if (moving)
+            {
+                Vector3 mousePos;
+                mousePos = Input.mousePosition;
+                mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            this.gameObject.transform.localPosition = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, gameObject.transform.localScale.z);
+                this.gameObject.transform.position = new Vector3(mousePos.x - startPosX, mousePos.y - startPosY, gameObject.transform.localScale.z);
+            }
         }
+        
     }
     private void OnMouseDown()
     {
@@ -33,8 +43,8 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
             mousePos = Input.mousePosition;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-            startPosX = mousePos.x - this.transform.localPosition.x;
-            startPosX = mousePos.y - this.transform.localPosition.y;
+            startPosX = mousePos.x - this.transform.position.x;
+            startPosY = mousePos.y - this.transform.position.y;
 
             moving = true;
         }
@@ -43,14 +53,26 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
     {
         moving = false;
 
-        if(Mathf.Abs(transform.localPosition.x - correctForm.transform.localPosition.x)<=0.5f&&
-            Mathf.Abs(transform.localPosition.y - correctForm.transform.localPosition.y)<=0.5f) 
+        if(Mathf.Abs(transform.position.x - correctForm.transform.position.x)<=.2f&&
+            Mathf.Abs(transform.position.y - correctForm.transform.position.y)<=.2f) 
         {
-            transform.localPosition=new Vector3(correctForm.transform.localPosition.x, correctForm.transform.localPosition.y, correctForm.transform.localScale.z);
+            transform.position=new Vector3(correctForm.transform.position.x, correctForm.transform.position.y, correctForm.transform.position.z);
+            finish = true;
+
+            completePuzzle.AddShape();
+            //if (completionSound != null && !completionSound.isPlaying)
+            //{
+            //    completionSound.Play();
+            //}
         }
         else
         {
-            transform.localPosition = new Vector3(resetPosition.x, resetPosition.y, resetPosition.z);
+            transform.position = new Vector3(resetPosition.x, resetPosition.y, resetPosition.z);
+
+            //if (errorSound != null && !errorSound.isPlaying)
+            //{
+            //    errorSound.Play();
+            //}
         }
     }
 }

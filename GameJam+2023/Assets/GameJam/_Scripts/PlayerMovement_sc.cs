@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class PlayerMovement_sc : MonoBehaviour
 {
+    Rigidbody2D rb;
+
+    [Header("Speed")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float runSpeed = 10f;
+
+    [Header("Jump")]
     [SerializeField] float jumpForce = 10f;
     [SerializeField] float doubleJumpForce = 7f;
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundRadius;
     [SerializeField] LayerMask groundLayer;
-
-    Rigidbody2D rb;
     bool isGrounded;
     bool canDoubleJump;
 
@@ -33,7 +36,6 @@ public class PlayerMovement_sc : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         bool isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
 
-        // Movimiento horizontal
         float currentSpeed = isRunning ? runSpeed : moveSpeed;
         rb.velocity = new Vector2(horizontalInput * currentSpeed, rb.velocity.y);
 

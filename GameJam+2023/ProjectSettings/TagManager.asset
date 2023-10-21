@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackGround
+    uniqueID: 4113368003
+    locked: 0
+  - name: BlackFigures
+    uniqueID: 2099445927
+    locked: 0
+  - name: Figures
+    uniqueID: 881274131
+    locked: 0
