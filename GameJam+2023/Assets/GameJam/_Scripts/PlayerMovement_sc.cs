@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerMovement_sc : MonoBehaviour
 {
     Rigidbody2D rb;
-
+    Animator animator;
+    
     [Header("Speed")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float runSpeed = 10f;
@@ -22,29 +23,35 @@ public class PlayerMovement_sc : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
-    { 
+    {
+        
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
-
-        if (isGrounded)
-        {
-            canDoubleJump = true;
-        }
 
         float horizontalInput = Input.GetAxis("Horizontal");
         bool isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
 
-        float currentSpeed = isRunning ? runSpeed : moveSpeed;
+        float currentSpeed = horizontalInput!=0 ? isRunning ? runSpeed : moveSpeed:0;
         rb.velocity = new Vector2(horizontalInput * currentSpeed, rb.velocity.y);
 
-        // Saltar
+        if (horizontalInput > 0 && transform.localScale.x < 0)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (horizontalInput < 0 && transform.localScale.x > 0)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
         if (isGrounded)
         {
             if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                canDoubleJump = true;
             }
         }
         else if (canDoubleJump)
@@ -55,6 +62,10 @@ public class PlayerMovement_sc : MonoBehaviour
                 canDoubleJump = false;
             }
         }
+        animator.SetFloat("currentSpeed", currentSpeed);
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetBool("canDoubleJump", canDoubleJump);
+
     }
     private void OnDrawGizmos()
     {

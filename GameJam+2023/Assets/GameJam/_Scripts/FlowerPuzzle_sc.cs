@@ -17,6 +17,7 @@ public class FlowerPuzzle : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        platforms = GameObject.FindGameObjectsWithTag("Platform");
     }
 
     private void Update()
@@ -43,7 +44,6 @@ public class FlowerPuzzle : MonoBehaviour
 
     private bool IsCloseToAnyPlatform()
     {
-        GameObject[] platforms = GameObject.FindGameObjectsWithTag("Platform");
         foreach (var platform in platforms)
         {
             float distance = Vector3.Distance(player.position, platform.transform.position);
