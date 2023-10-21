@@ -10,7 +10,7 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
     [SerializeField] Transform platform1, platform2;
     [SerializeField] Transform destinyPlatform1, destinyPlatform2;
     [SerializeField] Transform originPlatform1, originPlatform2;
-    [SerializeField] Transform directionPlatform1, directionPlatform2;
+    Transform directionPlatform1, directionPlatform2;
 
 
     void Start()

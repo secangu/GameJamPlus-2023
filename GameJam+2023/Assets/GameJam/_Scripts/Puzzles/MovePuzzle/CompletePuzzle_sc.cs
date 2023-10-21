@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CompletePuzzle_sc : MonoBehaviour
@@ -7,7 +6,7 @@ public class CompletePuzzle_sc : MonoBehaviour
     int shapes;
     int exactShapes;
     [SerializeField] GameObject figures;
-    AudioSource completedPuzzleSound;
+    [SerializeField] AudioSource completedPuzzleSound;
 
     void Start()
     {
@@ -16,17 +15,23 @@ public class CompletePuzzle_sc : MonoBehaviour
     }
     private void Update()
     {
-        if(exactShapes>=shapes)
+        if (exactShapes >= shapes)
         {
             if (completedPuzzleSound != null && !completedPuzzleSound.isPlaying)
             {
                 completedPuzzleSound.Play();
+                StartCoroutine(DisabledGameObject());
+
             }
-            gameObject.SetActive(false);
         }
     }
     public void AddShape()
     {
         exactShapes++;
+    }
+    private IEnumerator DisabledGameObject()
+    {
+        yield return new WaitForSeconds(completedPuzzleSound.clip.length);
+        gameObject.SetActive(false);
     }
 }
