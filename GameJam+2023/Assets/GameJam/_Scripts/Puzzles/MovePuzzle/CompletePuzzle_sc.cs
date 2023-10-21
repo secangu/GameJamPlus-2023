@@ -7,7 +7,7 @@ public class CompletePuzzle_sc : MonoBehaviour
     int shapes;
     int exactShapes;
     [SerializeField] GameObject figures;
-    AudioSource completePuzzle;
+    AudioSource completedPuzzleSound;
 
     void Start()
     {
@@ -18,9 +18,9 @@ public class CompletePuzzle_sc : MonoBehaviour
     {
         if(exactShapes>=shapes)
         {
-            if (completePuzzle != null && !completePuzzle.isPlaying)
+            if (completedPuzzleSound != null && !completedPuzzleSound.isPlaying)
             {
-                completePuzzle.Play();
+                completedPuzzleSound.Play();
             }
             gameObject.SetActive(false);
         }
