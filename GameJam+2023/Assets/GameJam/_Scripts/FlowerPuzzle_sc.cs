@@ -2,14 +2,18 @@ using UnityEngine;
 
 public class FlowerPuzzle : MonoBehaviour
 {
+    [SerializeField] GameObject flowerImagesContainer;
     [SerializeField] GameObject imageFlowerActive;
     [SerializeField] GameObject flower;
-    [SerializeField] GameObject correctPlatform;
-    GameObject[] platforms;
+    [SerializeField] int correctPlatform;
+    [SerializeField] GameObject[] platforms;
 
-    [SerializeField] Transform origin;
+    Vector3 origin;
     [SerializeField] Transform zoneCorrect;
 
+    [Header("Distances")]
+    [SerializeField] float distanceToCorrectPlatform;
+    [SerializeField] float distanceToFlower;
     [SerializeField] float distancePickUp;
 
     private Transform player;
@@ -17,27 +21,37 @@ public class FlowerPuzzle : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        platforms = GameObject.FindGameObjectsWithTag("Platform");
+        origin = flower.transform.position;
     }
-
+    private bool AreChildrenActive(GameObject container)
+    {
+        foreach (Transform child in container.transform)
+        {
+            if (child.gameObject.activeSelf)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     private void Update()
     {
-        float distanceToFlower = Vector3.Distance(player.position, flower.transform.position);
-        float distanceToCorrectPlatform = Vector3.Distance(player.position, correctPlatform.transform.position);
+        distanceToFlower = Vector3.Distance(player.position, flower.transform.position);
+        distanceToCorrectPlatform = Vector3.Distance(player.position, platforms[correctPlatform].transform.position);
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (distanceToFlower <= distancePickUp)
+            if (distanceToFlower <= distancePickUp && !AreChildrenActive(flowerImagesContainer))
             {
                 CollectFlower();
             }
-            else if (distanceToCorrectPlatform <= distancePickUp)
+            else if (distanceToCorrectPlatform <= distancePickUp && imageFlowerActive.activeSelf)
             {
                 PlaceFlower(zoneCorrect.position);
             }
-            else if (IsCloseToAnyPlatform())
+            else if (IsCloseToAnyPlatform() && imageFlowerActive.activeSelf)
             {
-                PlaceFlower(origin.position);
+                PlaceFlower(origin);
             }
         }
     }
