@@ -17,7 +17,7 @@ public class PlayerMovement_sc : MonoBehaviour
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundRadius;
     [SerializeField] LayerMask groundLayer;
-    bool isGrounded;
+    [SerializeField] bool isGrounded;
     bool canDoubleJump;
 
     private void Start()

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,10 +69,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +134,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Elemets_Scenario_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 5509
+        width: 1942
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca62344ad18a1e45b5a695bb0c0b4fe
+      internalID: 481213865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_1
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 5471
+        width: 181
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e387780f200b58d41ba625ed9d900b5d
+      internalID: -1213807496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_2
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 5673
+        width: 158
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb4d5904c167564588870ee389d0c42
+      internalID: -93217390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_3
+      rect:
+        serializedVersion: 2
+        x: 2676
+        y: 5594
+        width: 217
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7e90a3b349674e947c099783fd360
+      internalID: -1011039902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_4
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 5670
+        width: 275
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000e59b2388562f499c02974a05a12db
+      internalID: -1447154516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_5
+      rect:
+        serializedVersion: 2
+        x: 3350
+        y: 5562
+        width: 316
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3d6a6089f477d41ac9b5990ac4d036
+      internalID: 123772188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_6
+      rect:
+        serializedVersion: 2
+        x: 3693
+        y: 5547
+        width: 319
+        height: 346
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cc2440bc680d04ebb979db53df16c0
+      internalID: -274711592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_7
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 4821
+        width: 1767
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c74ae398590b546be536ac1732b22e
+      internalID: -104979085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_8
+      rect:
+        serializedVersion: 2
+        x: 2026
+        y: 4809
+        width: 638
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567d1c1f679ad1d4ba68fd47b5d18947
+      internalID: 1619203995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_9
+      rect:
+        serializedVersion: 2
+        x: 2802
+        y: 4830
+        width: 246
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfad3c196668b74ab8f93114c5e01d9
+      internalID: 220363934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_10
+      rect:
+        serializedVersion: 2
+        x: 3098
+        y: 4815
+        width: 444
+        height: 677
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3cb45ccae83f994b947e79e783a0ede
+      internalID: -1851531082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_11
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 4909
+        width: 404
+        height: 369
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fbb542222b5994d83e481567417569
+      internalID: 962263666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3505
+        width: 72
+        height: 1163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364fc7de1963eb4469fcf784343a1acc
+      internalID: 1736989611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_13
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 3822
+        width: 492
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1281cf498894a864e8da6052abd3ebb0
+      internalID: -1579709031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_14
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 4138
+        width: 260
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe64ab5e01403f647bb3af53689ab56c
+      internalID: 1883197990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_15
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 4132
+        width: 261
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b96cb45ca68fb4eabd4d1d2400e00b
+      internalID: 272312321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +481,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Elemets_Scenario_0: 481213865
+      Elemets_Scenario_1: -1213807496
+      Elemets_Scenario_10: -1851531082
+      Elemets_Scenario_11: 962263666
+      Elemets_Scenario_12: 1736989611
+      Elemets_Scenario_13: -1579709031
+      Elemets_Scenario_14: 1883197990
+      Elemets_Scenario_15: 272312321
+      Elemets_Scenario_2: -93217390
+      Elemets_Scenario_3: -1011039902
+      Elemets_Scenario_4: -1447154516
+      Elemets_Scenario_5: 123772188
+      Elemets_Scenario_6: -274711592
+      Elemets_Scenario_7: -104979085
+      Elemets_Scenario_8: 1619203995
+      Elemets_Scenario_9: 220363934
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
