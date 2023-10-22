@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platform
+  - Void
   layers:
   - Default
   - TransparentFX
