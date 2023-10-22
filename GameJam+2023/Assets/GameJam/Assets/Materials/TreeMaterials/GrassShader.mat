@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 7dbee9a91921dbd4bbb985fb149a9756, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3a5c505f5daeb0f40ba478348c242dc3, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
@@ -97,7 +97,7 @@ Material:
     - _WindInfliuenceMask: 1
     - _WindScale: 0.1
     - _WindSpeed: 6
-    - _WindStrength: 0.1
+    - _WindStrength: 0.3
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}

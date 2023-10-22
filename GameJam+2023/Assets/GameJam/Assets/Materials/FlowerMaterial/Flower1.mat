@@ -94,10 +94,10 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _WindInfliuenceMask: 1
-    - _WindScale: 0.1
-    - _WindSpeed: 6
-    - _WindStrength: 0.1
+    - _WindInfliuenceMask: 3
+    - _WindScale: 0.3
+    - _WindSpeed: 3
+    - _WindStrength: 0.3
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
@@ -106,7 +106,7 @@ Material:
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _WindDirection: {r: 1.5, g: -0.1, b: 0, a: 0}
+    - _WindDirection: {r: -3, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5280526568310914063
 MonoBehaviour:

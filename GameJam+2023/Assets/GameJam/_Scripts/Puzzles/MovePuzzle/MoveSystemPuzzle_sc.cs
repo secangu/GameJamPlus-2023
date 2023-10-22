@@ -12,8 +12,7 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
 
     Vector3 resetPosition;
 
-    //AudioSource completionSound;
-    //AudioSource errorSound;
+    [SerializeField] AudioSource selectPiece, dropPiece, wrongPiece;
 
     void Start()
     {
@@ -47,6 +46,10 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
             startPosY = mousePos.y - this.transform.position.y;
 
             moving = true;
+            if (selectPiece != null && !selectPiece.isPlaying)
+            {
+                selectPiece.Play();
+            }
         }
     }
     private void OnMouseUp()
@@ -60,19 +63,19 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
             finish = true;
 
             completePuzzle.AddShape();
-            //if (completionSound != null && !completionSound.isPlaying)
-            //{
-            //    completionSound.Play();
-            //}
+            if (dropPiece != null && !dropPiece.isPlaying)
+            {
+                dropPiece.Play();
+            }
         }
         else
         {
             transform.position = new Vector3(resetPosition.x, resetPosition.y, resetPosition.z);
 
-            //if (errorSound != null && !errorSound.isPlaying)
-            //{
-            //    errorSound.Play();
-            //}
+            if (wrongPiece != null && !wrongPiece.isPlaying)
+            {
+                wrongPiece.Play();
+            }
         }
     }
 }

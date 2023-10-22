@@ -5,14 +5,13 @@ public class FlowerPuzzle_sc : MonoBehaviour
     [SerializeField] GameObject flowerImagesContainer;
     [SerializeField] GameObject imageFlowerActive;
     [SerializeField] GameObject flower;
-    [SerializeField] int correctPlatform;
-    [SerializeField] GameObject[] platforms;
+    [SerializeField] int correctZone;
+    [SerializeField] GameObject[] zones;
     [SerializeField] bool isCorrect;
     Vector3 origin;
-    [SerializeField] Transform zoneCorrect;
 
     [Header("Distances")]
-    [SerializeField] float distanceToCorrectPlatform;
+    [SerializeField] float distanceToCorrectZone;
     [SerializeField] float distanceToFlower;
     [SerializeField] float distancePickUp;
 
@@ -39,7 +38,7 @@ public class FlowerPuzzle_sc : MonoBehaviour
     private void Update()
     {
         distanceToFlower = Vector3.Distance(player.position, flower.transform.position);
-        distanceToCorrectPlatform = Vector3.Distance(player.position, platforms[correctPlatform].transform.position);
+        distanceToCorrectZone = Vector3.Distance(player.position, zones[correctZone].transform.position);
 
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -48,9 +47,9 @@ public class FlowerPuzzle_sc : MonoBehaviour
                 CollectFlower();
                 isCorrect = false;
             }
-            else if (distanceToCorrectPlatform <= distancePickUp && imageFlowerActive.activeSelf)
+            else if (distanceToCorrectZone <= distancePickUp && imageFlowerActive.activeSelf)
             {
-                PlaceFlower(zoneCorrect.position);
+                PlaceFlower(zones[correctZone].transform.position);
                 isCorrect= true;
             }
             else if (IsCloseToAnyPlatform() && imageFlowerActive.activeSelf)
@@ -63,7 +62,7 @@ public class FlowerPuzzle_sc : MonoBehaviour
 
     private bool IsCloseToAnyPlatform()
     {
-        foreach (var platform in platforms)
+        foreach (var platform in zones)
         {
             float distance = Vector3.Distance(player.position, platform.transform.position);
             if (distance <= distancePickUp)

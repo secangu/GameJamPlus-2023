@@ -4,6 +4,7 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
 {
     [SerializeField] FlowerPuzzle_sc[] flowerCheckers;
     [SerializeField] bool allFlowersCorrect;
+    bool sound;
 
     [Header("Platforms")]
     [SerializeField] float speed;
@@ -12,12 +13,12 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
     [SerializeField] Transform originPlatform1, originPlatform2;
     Transform directionPlatform1, directionPlatform2;
 
-
+    [SerializeField] AudioSource completedPuzzleSound;
     void Start()
     {
         flowerCheckers = GetComponentsInChildren<FlowerPuzzle_sc>();
-        
-        originPlatform1.position = platform1.position;         
+
+        originPlatform1.position = platform1.position;
         originPlatform2.position = platform2.position;
 
         directionPlatform1 = originPlatform1;
@@ -34,6 +35,12 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
         {
             MovePlatform(ref platform1, destinyPlatform1, originPlatform1, ref directionPlatform1);
             MovePlatform(ref platform2, destinyPlatform2, originPlatform2, ref directionPlatform2);
+
+            if (!sound && completedPuzzleSound != null && !completedPuzzleSound.isPlaying)
+            {
+                completedPuzzleSound.Play();
+                sound = true;
+            }
         }
     }
     void MovePlatform(ref Transform platform, Transform destiny, Transform origin, ref Transform direction)
@@ -65,10 +72,7 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
         if (allFlowersCorrect)
         {
             Debug.Log("a");
-            //if (completedPuzzleSound != null && !completedPuzzleSound.isPlaying)
-            //{
-            //    completedPuzzleSound.Play();
-            //}
+
         }
     }
 }
