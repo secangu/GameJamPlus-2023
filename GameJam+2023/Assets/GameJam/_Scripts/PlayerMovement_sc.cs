@@ -48,10 +48,10 @@ public class PlayerMovement_sc : MonoBehaviour
 
         if (isGrounded)
         {
+            canDoubleJump = true;
             if (Input.GetButtonDown("Jump"))
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-                canDoubleJump = true;
             }
         }
         else if (canDoubleJump)

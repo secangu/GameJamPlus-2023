@@ -13,8 +13,6 @@ public class CompletePuzzle_sc : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-
         shapes = figures.transform.childCount;
         planet1.SetActive(false);
         planet2.SetActive(false);
