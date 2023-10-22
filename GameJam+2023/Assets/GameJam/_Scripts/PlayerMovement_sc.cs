@@ -6,7 +6,7 @@ public class PlayerMovement_sc : MonoBehaviour
 {
     Rigidbody2D rb;
     Animator animator;
-    
+
     [Header("Speed")]
     [SerializeField] float moveSpeed = 5f;
     [SerializeField] float runSpeed = 10f;
@@ -20,6 +20,8 @@ public class PlayerMovement_sc : MonoBehaviour
     [SerializeField] bool isGrounded;
     bool canDoubleJump;
 
+
+    [SerializeField] AudioSource steps, jump, doubleJump;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,13 +30,13 @@ public class PlayerMovement_sc : MonoBehaviour
 
     private void Update()
     {
-        
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
 
         float horizontalInput = Input.GetAxis("Horizontal");
         bool isRunning = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
 
-        float currentSpeed = horizontalInput!=0 ? isRunning ? runSpeed : moveSpeed:0;
+        float currentSpeed = horizontalInput != 0 ? isRunning ? runSpeed : moveSpeed : 0;
         rb.velocity = new Vector2(horizontalInput * currentSpeed, rb.velocity.y);
 
         if (horizontalInput > 0 && transform.localScale.x < 0)
@@ -67,6 +69,19 @@ public class PlayerMovement_sc : MonoBehaviour
         animator.SetBool("canDoubleJump", canDoubleJump);
 
     }
+    public void JumpSound()
+    {
+        jump.Play();
+    }
+    public void DoubleJumpSound()
+    {
+        doubleJump.Play();
+    }
+    public void StepsSound()
+    {
+        steps.Play();
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
