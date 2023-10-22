@@ -5,6 +5,7 @@ public class RotateSystemPuzzle_sc : MonoBehaviour
     [SerializeField] int correctRotationValue;
     [SerializeField] bool isRotationCorrect;
 
+    [SerializeField] AudioSource click;
     public bool IsRotationCorrect { get => isRotationCorrect; set => isRotationCorrect = value; }
 
     void Start()
@@ -15,7 +16,6 @@ public class RotateSystemPuzzle_sc : MonoBehaviour
     {
         float currentRotation = transform.rotation.eulerAngles.z;
 
-        // Ajusta el ángulo de rotación actual a un valor en el rango [-180, 180] grados
         if (currentRotation > 180f)
         {
             currentRotation -= 360f;
@@ -35,6 +35,12 @@ public class RotateSystemPuzzle_sc : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             transform.Rotate(Vector3.forward * 90f);
+
+            if (click.isPlaying)
+            {
+                click.Stop();
+            }
+            click.Play();
         }
     }
 }

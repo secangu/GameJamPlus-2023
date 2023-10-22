@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.U2D;
 
 public class CompletedRotatePuzzle_sc : MonoBehaviour
 {
@@ -9,6 +10,10 @@ public class CompletedRotatePuzzle_sc : MonoBehaviour
     [SerializeField] GameObject[] fanWithWind, staticFan;
 
     [SerializeField] RotateSystemPuzzle_sc[] rotationCheckers;
+
+    [SerializeField] SpriteRenderer sprite;
+    [SerializeField] Sprite completedsprite;
+
     bool allRotationCorrect;
     bool sound;
 
@@ -45,6 +50,9 @@ public class CompletedRotatePuzzle_sc : MonoBehaviour
             cameraPuzzle.SetActive(false);
 
             StartCoroutine(DisableGameObject());
+
+            sprite.sprite = completedsprite;
+
 
             for (int i = 0; i < staticFan.Length; i++)
             {
