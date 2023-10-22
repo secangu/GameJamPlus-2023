@@ -22,6 +22,10 @@ public class PlayerMovement_sc : MonoBehaviour
 
 
     [SerializeField] AudioSource steps, jump, doubleJump;
+
+    public float DoubleJumpForce { get => doubleJumpForce; set => doubleJumpForce = value; }
+    public float JumpForce { get => jumpForce; set => jumpForce = value; }
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -53,29 +57,23 @@ public class PlayerMovement_sc : MonoBehaviour
             canDoubleJump = true;
             if (Input.GetButtonDown("Jump"))
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.velocity = new Vector2(rb.velocity.x, JumpForce);
+                jump.Play();
             }
         }
         else if (canDoubleJump)
         {
             if (Input.GetButtonDown("Jump"))
             {
-                rb.velocity = new Vector2(rb.velocity.x, doubleJumpForce);
+                rb.velocity = new Vector2(rb.velocity.x, DoubleJumpForce);
                 canDoubleJump = false;
+                doubleJump.Play();
             }
         }
         animator.SetFloat("currentSpeed", currentSpeed);
         animator.SetBool("isGrounded", isGrounded);
         animator.SetBool("canDoubleJump", canDoubleJump);
 
-    }
-    public void JumpSound()
-    {
-        jump.Play();
-    }
-    public void DoubleJumpSound()
-    {
-        doubleJump.Play();
     }
     public void StepsSound()
     {

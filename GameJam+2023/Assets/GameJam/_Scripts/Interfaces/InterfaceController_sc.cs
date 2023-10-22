@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class InterfaceController_sc : MonoBehaviour
 {
-    MouseLock_sc mouseLock;
     [SerializeField] bool _isMenu;
     bool _isPaused;
-    GameObject[] allInterfaces;
+    [SerializeField] GameObject[] allInterfaces;
     GameObject pauseInterface;
+    PlayerMovement_sc playerMovement;
+
+    [SerializeField]float jumpForce, doubleJumpForce;
     void Start()
     {
-        
+        playerMovement=FindObjectOfType<PlayerMovement_sc>();
+        jumpForce = playerMovement.JumpForce;
+        doubleJumpForce = playerMovement.DoubleJumpForce;
     }
 
     void Update()
@@ -33,20 +37,18 @@ public class InterfaceController_sc : MonoBehaviour
     public void Pause()
     {
         _isPaused = true;
-        //if (playerMovement != null) playerMovement.JumpForce = 0;
-        //if (playerMovementSea != null) playerMovementSea.BoostForce = 0;
+        if (playerMovement != null) playerMovement.JumpForce = 0;
+        if (playerMovement != null) playerMovement.DoubleJumpForce = 0;
 
         Time.timeScale = 0f;
-        MouseUnLock();
     }
     public void Resume()
     {
         _isPaused = false;
-        //if (playerMovement != null) playerMovement.JumpForce = 3;
-        //if (playerMovementSea != null) playerMovementSea.BoostForce = 7;
+        if (playerMovement != null) playerMovement.JumpForce = jumpForce;
+        if (playerMovement != null) playerMovement.DoubleJumpForce = doubleJumpForce;
 
         Time.timeScale = 1f;
-        MouseLock();
     }
     void CloseInterfaces()
     {
@@ -54,13 +56,5 @@ public class InterfaceController_sc : MonoBehaviour
         {
             allInterfaces[i].SetActive(false);
         }
-    }
-    public void MouseLock()
-    {
-        if (mouseLock != null) mouseLock.Mouse = false;
-    }
-    public void MouseUnLock()
-    {
-        if (mouseLock != null) mouseLock.Mouse = true;
     }
 }

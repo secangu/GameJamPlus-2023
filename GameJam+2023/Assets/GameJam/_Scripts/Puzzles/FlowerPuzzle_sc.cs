@@ -6,6 +6,7 @@ public class FlowerPuzzle_sc : MonoBehaviour
     [SerializeField] GameObject flowerImagesContainer;
     [SerializeField] GameObject imageFlowerActive;
     [SerializeField] GameObject flower;
+    [SerializeField] GameObject itemHolder;
     [SerializeField] int correctZone;
     [SerializeField] GameObject[] zones;
     [SerializeField] bool isCorrect;
@@ -105,6 +106,7 @@ public class FlowerPuzzle_sc : MonoBehaviour
 
     private void CollectFlower()
     {
+        if(!itemHolder.activeSelf) itemHolder.SetActive(true);
         flower.SetActive(false);
         imageFlowerActive.SetActive(true);
     }

@@ -12,7 +12,7 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
     [SerializeField] Transform destinyPlatform1;
     [SerializeField] Transform originPlatform1;
     Transform directionPlatform1;
-    [SerializeField] GameObject hint2, hint3;
+    [SerializeField] GameObject itemHolder, hint2, hint3;
     [SerializeField] AudioSource completedPuzzleSound;
     void Start()
     {
@@ -22,17 +22,16 @@ public class CompletedFlowerPuzzle_sc : MonoBehaviour
         directionPlatform1 = originPlatform1;
 
         hint3.SetActive(false);
-
+        itemHolder.SetActive(false);
     }
 
     void Update()
     {
         CheckAllFlowers();
 
-        CheckAllFlowers();
-
         if (allFlowersCorrect)
         {
+            itemHolder.SetActive(false);
             MovePlatform(ref platform1, destinyPlatform1, originPlatform1, ref directionPlatform1);
             hint2.SetActive(false);
             hint3.SetActive(true);
