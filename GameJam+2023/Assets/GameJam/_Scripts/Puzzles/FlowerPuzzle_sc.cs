@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FlowerPuzzle_sc : MonoBehaviour
@@ -16,6 +17,8 @@ public class FlowerPuzzle_sc : MonoBehaviour
     [SerializeField] float distancePickUp;
 
     private Transform player;
+    bool collectSound, wrongSound, dropSound;
+    [SerializeField] AudioSource collectFlower, wrongFlower, dropFlower;
 
     public bool IsCorrect { get => isCorrect; set => isCorrect = value; }
 
@@ -45,17 +48,44 @@ public class FlowerPuzzle_sc : MonoBehaviour
             if (distanceToFlower <= distancePickUp && !AreChildrenActive(flowerImagesContainer))
             {
                 CollectFlower();
+                zones[correctZone].GetComponent<SpriteRenderer>().enabled = true;
                 isCorrect = false;
+
+                wrongSound = false;
+                dropSound= false;
+                if (!collectSound && collectFlower != null && !collectFlower.isPlaying)
+                {
+                    collectFlower.Play();
+                    collectSound = true;
+                }
             }
             else if (distanceToCorrectZone <= distancePickUp && imageFlowerActive.activeSelf)
             {
                 PlaceFlower(zones[correctZone].transform.position);
+                zones[correctZone].GetComponent<SpriteRenderer>().enabled = false;
                 isCorrect= true;
+
+                collectSound = false;
+                wrongSound = false;
+                if (!dropSound && dropFlower != null && !dropFlower.isPlaying)
+                {
+                    dropFlower.Play();
+                    dropSound = true;
+                }
             }
             else if (IsCloseToAnyPlatform() && imageFlowerActive.activeSelf)
             {
                 PlaceFlower(origin);
+                zones[correctZone].GetComponent<SpriteRenderer>().enabled = true;
                 isCorrect = false;
+
+                dropSound = false;
+                collectSound = false;
+                if (!wrongSound && wrongFlower != null && !wrongFlower.isPlaying)
+                {
+                    wrongFlower.Play();
+                    wrongSound = true;
+                }
             }
         }
     }

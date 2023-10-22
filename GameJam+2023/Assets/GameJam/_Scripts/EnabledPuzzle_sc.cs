@@ -6,6 +6,7 @@ public class EnabledPuzzle_sc : MonoBehaviour
     GameObject player;
 
     bool enter;
+    [SerializeField] bool chageCamera;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -13,7 +14,7 @@ public class EnabledPuzzle_sc : MonoBehaviour
     }
     private void Update()
     {
-        if (enter && Input.GetKeyDown(KeyCode.E))
+        if (enter && Input.GetKeyDown(KeyCode.E) && chageCamera)
         {
             puzzle.SetActive(true);
             cameraPuzzle.SetActive(true);
