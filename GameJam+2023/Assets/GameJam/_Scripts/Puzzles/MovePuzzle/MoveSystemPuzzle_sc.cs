@@ -67,6 +67,8 @@ public class MoveSystemPuzzle_sc : MonoBehaviour
             {
                 dropPiece.Play();
             }
+            gameObject.GetComponent<Collider2D>().enabled = false;
+
         }
         else
         {

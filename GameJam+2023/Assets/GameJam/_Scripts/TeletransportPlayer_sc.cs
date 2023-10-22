@@ -12,6 +12,10 @@ public class TeletransportPlayer_sc : MonoBehaviour
         {
             TeletransportPlayer();
         }
+        if (other.CompareTag("Hint"))
+        {
+            other.gameObject.SetActive(false);
+        }
     }
     private void TeletransportPlayer()
     {

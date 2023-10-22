@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: be66f34261ef65f448dd611bbf49530a
+guid: 58a4e6cc25de7894b9f358f253a123a6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -136,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Scenario3_0
+      name: Escenario6_0
       rect:
         serializedVersion: 2
-        x: 1555
-        y: 2
-        width: 2809
-        height: 1055
+        x: 1332
+        y: 9
+        width: 2969
+        height: 1034
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,8 +150,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1adec1a123980a24ba91f70d581439e8
-      internalID: 298550109
+      spriteID: a8ac1e3f5fda22d43a930fc2a2d8b9ac
+      internalID: 338064546
       vertices: []
       indices: 
       edges: []
@@ -167,7 +167,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Scenario3_0: 298550109
+      Escenario6_0: 338064546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

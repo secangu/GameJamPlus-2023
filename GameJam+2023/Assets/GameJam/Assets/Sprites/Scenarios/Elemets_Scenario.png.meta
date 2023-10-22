@@ -984,6 +984,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_38
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 2002
+        width: 215
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137ecc3b50b5804438d8d158a5e7dbcc
+      internalID: -640732283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_39
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 2089
+        width: 626
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033d2e3001cac91419b5d93aaba55532
+      internalID: -438917241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_40
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1030
+        width: 634
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc223e0366a0404ebc5f23b58e1d42d
+      internalID: -1803211954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemets_Scenario_41
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1080
+        width: 278
+        height: 708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a995d2f140d384a8f2593e8af162ac
+      internalID: 2028867693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1027,7 +1111,11 @@ TextureImporter:
       Elemets_Scenario_35: 662170272
       Elemets_Scenario_36: -797502239
       Elemets_Scenario_37: 211291185
+      Elemets_Scenario_38: -640732283
+      Elemets_Scenario_39: -438917241
       Elemets_Scenario_4: -1447154516
+      Elemets_Scenario_40: -1803211954
+      Elemets_Scenario_41: 2028867693
       Elemets_Scenario_5: 123772188
       Elemets_Scenario_6: -274711592
       Elemets_Scenario_7: -104979085

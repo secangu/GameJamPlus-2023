@@ -139,9 +139,9 @@ TextureImporter:
       name: Puzzle_1_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 14
         y: 353
-        width: 974
+        width: 975
         height: 1467
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,10 +160,10 @@ TextureImporter:
       name: Puzzle_1_1
       rect:
         serializedVersion: 2
-        x: 1018
+        x: 1016
         y: 1305
         width: 449
-        height: 519
+        height: 518
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       name: Puzzle_1_2
       rect:
         serializedVersion: 2
-        x: 1524
-        y: 1123
+        x: 1523
+        y: 1124
         width: 346
-        height: 680
+        height: 679
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,9 +203,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2025
-        y: 1093
-        width: 372
-        height: 724
+        y: 1094
+        width: 371
+        height: 723
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: Puzzle_1_4
       rect:
         serializedVersion: 2
-        x: 1030
+        x: 1029
         y: 119
         width: 433
-        height: 683
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,7 +247,7 @@ TextureImporter:
         x: 1488
         y: 91
         width: 442
-        height: 668
+        height: 667
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,8 +267,8 @@ TextureImporter:
         serializedVersion: 2
         x: 1978
         y: 52
-        width: 448
-        height: 983
+        width: 447
+        height: 982
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,6 +278,48 @@ TextureImporter:
       bones: []
       spriteID: 5023d699a1a125847b791ac00315039c
       internalID: 2026831416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puzzle_1_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 5
+        width: 474
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6ab52161ddd3a4ea13cea63f4e763c
+      internalID: 647912771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Puzzle_1_8
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 21
+        width: 444
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dac0d61cd6fb82499f186792b46d0aa
+      internalID: 933582966
       vertices: []
       indices: 
       edges: []
@@ -300,6 +342,8 @@ TextureImporter:
       Puzzle_1_4: -2139525984
       Puzzle_1_5: -1218563947
       Puzzle_1_6: 2026831416
+      Puzzle_1_7: 647912771
+      Puzzle_1_8: 933582966
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
