@@ -10305,7 +10305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6ce26e3df3702e4db429d87a126617c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 0
+  scene: 1
 --- !u!1 &184598794
 GameObject:
   m_ObjectHideFlags: 0
@@ -100308,8 +100308,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isMenu: 0
   allInterfaces: []
+  pauseInterface: {fileID: 0}
   jumpForce: 0
   doubleJumpForce: 0
+  click: {fileID: 0}
+  selection: {fileID: 0}
 --- !u!1 &1675116684
 GameObject:
   m_ObjectHideFlags: 3
@@ -124783,8 +124786,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.42754996, y: 0.93719995, z: 0}
-    m_Extent: {x: 2.99725, y: 3.9639997, z: 0}
+    m_Center: {x: -0.4261999, y: 0.9254, z: 0}
+    m_Extent: {x: 2.9891, y: 3.9598, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0.37
