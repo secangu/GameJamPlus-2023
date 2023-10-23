@@ -10,17 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Context_Entry_es
+  m_Name: InGame_es
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: es
-  m_SharedData: {fileID: 11400000, guid: 09d3bbdbe4f62434f8a736a5c2d23366, type: 2}
+  m_SharedData: {fileID: 11400000, guid: 3e86fcba2eabd4a409f30f3990cf5835, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 7098404864
-    m_Localized: "Como el navegante de sue\xF1os debes proteger los sue\xF1os de
-      otros y ayudarlos, comienza ayudando un peque\xF1o conejo."
+  - m_Id: 1140231573504
+    m_Localized: Muevete, corre y explora el mundo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1346838794240
+    m_Localized: Tienes un doble salto, pruebalo
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1628360478720
+    m_Localized: Pon las flores en el lugar correcto
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1771872784384
+    m_Localized: El viento te ayuda a ir mas lejos
     m_Metadata:
       m_Items: []
   references:

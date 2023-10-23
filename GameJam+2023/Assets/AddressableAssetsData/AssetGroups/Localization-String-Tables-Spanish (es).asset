@@ -16,7 +16,37 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: b1f7c3a3055060f4f8827f345fafb291
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: f092f210bddbaa041b55e3afa779a9a2
+    m_Address: Interfaces_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 13a3021e554dea24d95bbd1d617ab0cb
+    m_Address: Context_Entry_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 630ca2aa7dd7a8146bf04fe531cda369
+    m_Address: Credits_scene_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0263977a9edc8354c95bf80e804c720f
+    m_Address: InGame_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 96f2948ff566e1845a050afed95240ad
+    m_Address: Puzzles_es
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-es
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ae575c95c4a4d604aa4f4ef877bd9b53, type: 2}
   m_SchemaSet:

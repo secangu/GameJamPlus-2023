@@ -10,17 +10,28 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
-  m_Name: Context_Entry_en
+  m_Name: InGame_en
   m_EditorClassIdentifier: 
   m_LocaleId:
     m_Code: en
-  m_SharedData: {fileID: 11400000, guid: 09d3bbdbe4f62434f8a736a5c2d23366, type: 2}
+  m_SharedData: {fileID: 11400000, guid: 3e86fcba2eabd4a409f30f3990cf5835, type: 2}
   m_Metadata:
     m_Items: []
   m_TableData:
-  - m_Id: 7098404864
-    m_Localized: As the sailor of dreams you must protect others dreams and help
-      them, start by helping a little bunny.
+  - m_Id: 1140231573504
+    m_Localized: Move, run & explore the world
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1346838794240
+    m_Localized: You have a double jump, try it
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1628360478720
+    m_Localized: Put the flowers in the right spot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1771872784384
+    m_Localized: The wind helps you go further
     m_Metadata:
       m_Items: []
   references:

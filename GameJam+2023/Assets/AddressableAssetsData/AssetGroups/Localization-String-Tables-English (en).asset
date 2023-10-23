@@ -23,6 +23,30 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ff7b5373678ccca40a54eb5379014e60
+    m_Address: Context_Entry_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f38291f5cb41cc34891133014566cae9
+    m_Address: Credits_scene_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 784f5588af0eead4c8e9cd584043810c
+    m_Address: InGame_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a7a12c14ee033be409dea3fcad62e916
+    m_Address: Puzzles_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ae575c95c4a4d604aa4f4ef877bd9b53, type: 2}
   m_SchemaSet:

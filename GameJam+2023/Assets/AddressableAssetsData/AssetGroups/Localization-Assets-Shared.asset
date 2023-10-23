@@ -22,6 +22,26 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09d3bbdbe4f62434f8a736a5c2d23366
+    m_Address: Assets/GameJam/Localization/Context_Entry Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3be4e79a5be17fb4b9d5e54daf462544
+    m_Address: Assets/GameJam/Localization/Credits_scene Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e86fcba2eabd4a409f30f3990cf5835
+    m_Address: Assets/GameJam/Localization/InGame Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 16c9cd5031ab5794fa85927dffe93283
+    m_Address: Assets/GameJam/Localization/Puzzles Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ae575c95c4a4d604aa4f4ef877bd9b53, type: 2}
   m_SchemaSet:

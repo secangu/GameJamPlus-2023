@@ -10,23 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
-  m_Name: Context_Entry Shared Data
+  m_Name: Credits_scene Shared Data
   m_EditorClassIdentifier: 
-  m_TableCollectionName: Context_Entry
-  m_TableCollectionNameGuidString: 09d3bbdbe4f62434f8a736a5c2d23366
-  m_Entries:
-  - m_Id: 7098404864
-    m_Key: Context
-    m_Metadata:
-      m_Items: []
+  m_TableCollectionName: Credits_scene
+  m_TableCollectionNameGuidString: 3be4e79a5be17fb4b9d5e54daf462544
+  m_Entries: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
-    rid: 9119649029558108185
+    rid: 9119649029558108190
   references:
     version: 2
     RefIds:
-    - rid: 9119649029558108185
+    - rid: 9119649029558108190
       type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
       data:
-        m_CustomEpoch: 1698024718943
+        m_CustomEpoch: 1698025639589

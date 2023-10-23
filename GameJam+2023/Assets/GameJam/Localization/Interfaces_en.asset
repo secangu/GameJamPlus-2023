@@ -17,7 +17,59 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 9f5a70bc2f8a79246986f0ff9e4635f1, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 2433805258752
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2605494898688
+    m_Localized: Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2659953741824
+    m_Localized: Credits
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3412445433856
+    m_Localized: Audio
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5793568591872
+    m_Localized: Master Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6980825059328
+    m_Localized: Melody Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7082494988288
+    m_Localized: Effects Volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7179538599936
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7242952282112
+    m_Localized: Controls
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7296706482176
+    m_Localized: Movement
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7413811449856
+    m_Localized: Interact
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7607319859200
+    m_Localized: Run
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7673766023168
+    m_Localized: Jump & Double Jump
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
