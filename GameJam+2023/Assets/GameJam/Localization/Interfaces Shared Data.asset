@@ -67,6 +67,10 @@ MonoBehaviour:
     m_Key: Jump
     m_Metadata:
       m_Items: []
+  - m_Id: 50012704055296
+    m_Key: Exit
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
