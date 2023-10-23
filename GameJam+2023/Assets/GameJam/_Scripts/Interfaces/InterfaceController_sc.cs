@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public class InterfaceController_sc : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class InterfaceController_sc : MonoBehaviour
     [SerializeField]float jumpForce, doubleJumpForce;
 
     [SerializeField] AudioSource click, selection;
+    int Language;
     void Start()
     {
         playerMovement=FindObjectOfType<PlayerMovement_sc>();
@@ -21,6 +24,9 @@ public class InterfaceController_sc : MonoBehaviour
             jumpForce = playerMovement.JumpForce;
             doubleJumpForce = playerMovement.DoubleJumpForce;
         }
+
+        LoadData();
+        Invoke(nameof(LocalLoad), 0.1f);
         
     }
 
@@ -76,5 +82,26 @@ public class InterfaceController_sc : MonoBehaviour
     public void SelectionSound()
     {
         selection.Play();
+    }
+
+    public void ChangeLanguage(int LanguageNum)
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[LanguageNum];
+        Language = LanguageNum;
+        SaveData();
+    }
+
+    private void SaveData()
+    {
+        PlayerPrefs.SetInt("Language", Language);
+    }
+
+    private void LoadData()
+    {
+        Language = PlayerPrefs.GetInt("Language");
+    }
+    private void LocalLoad()
+    {
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[Language];
     }
 }

@@ -17,7 +17,20 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 3be4e79a5be17fb4b9d5e54daf462544, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 28154716033024
+    m_Localized: Thanks for playing!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28117676134400
+    m_Localized: "Development\r\n\r\nGame Programming and Design\r\n- Sergio Carvajal
+      -\n\n\nArt and Animation\r\n- Sandra Pacheco - \n\n\nArt, Music, Sound, and
+      Level Design\r\n- Yulian Rios -\n\r\n\nSpecial Thanks\r\n\r\nThe organizers
+      of GameJam+ LATAM for the opportunity.\r\n\r\n\nTools and Technologies\r\n\n-
+      Unity -\n\r- Illustrator -\n- Fl Studio - \n- Chiptone -\n\n\nDevelopment Time\r\n\r\nThis
+      game was created during GameJam+ LATAM from October 20th to October 22nd, 2023."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
