@@ -11,11 +11,18 @@ public class InterfaceController_sc : MonoBehaviour
     PlayerMovement_sc playerMovement;
 
     [SerializeField]float jumpForce, doubleJumpForce;
+
+    [SerializeField] AudioSource click, selection;
+    [SerializeField] int scene;
     void Start()
     {
         playerMovement=FindObjectOfType<PlayerMovement_sc>();
-        jumpForce = playerMovement.JumpForce;
-        doubleJumpForce = playerMovement.DoubleJumpForce;
+        if(playerMovement != null )
+        {
+            jumpForce = playerMovement.JumpForce;
+            doubleJumpForce = playerMovement.DoubleJumpForce;
+        }
+        
     }
 
     void Update()
@@ -56,5 +63,19 @@ public class InterfaceController_sc : MonoBehaviour
         {
             allInterfaces[i].SetActive(false);
         }
+    }
+
+    public void ChangeScene()
+    {
+        ChangeScene_sc changeScene = FindObjectOfType<ChangeScene_sc>();
+        StartCoroutine(changeScene.ChangeScene(scene));
+    }
+    public void ClickSound()
+    {
+        click.Play();
+    }
+    public void SelectionSound()
+    {
+        selection.Play();
     }
 }
