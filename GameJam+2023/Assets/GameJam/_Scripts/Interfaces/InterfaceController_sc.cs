@@ -7,13 +7,12 @@ public class InterfaceController_sc : MonoBehaviour
     [SerializeField] bool _isMenu;
     bool _isPaused;
     [SerializeField] GameObject[] allInterfaces;
-    GameObject pauseInterface;
+    [SerializeField] GameObject pauseInterface;
     PlayerMovement_sc playerMovement;
 
     [SerializeField]float jumpForce, doubleJumpForce;
 
     [SerializeField] AudioSource click, selection;
-    [SerializeField] int scene;
     void Start()
     {
         playerMovement=FindObjectOfType<PlayerMovement_sc>();
@@ -65,7 +64,7 @@ public class InterfaceController_sc : MonoBehaviour
         }
     }
 
-    public void ChangeScene()
+    public void ChangeScene(int scene)
     {
         ChangeScene_sc changeScene = FindObjectOfType<ChangeScene_sc>();
         StartCoroutine(changeScene.ChangeScene(scene));
