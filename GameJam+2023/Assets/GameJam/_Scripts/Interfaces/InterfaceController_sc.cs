@@ -91,6 +91,12 @@ public class InterfaceController_sc : MonoBehaviour
         SaveData();
     }
 
+    public void ExitGame()
+    {
+        Debug.Log("se salio ahora si");
+        Application.Quit();
+    }
+
     private void SaveData()
     {
         PlayerPrefs.SetInt("Language", Language);
@@ -104,4 +110,5 @@ public class InterfaceController_sc : MonoBehaviour
     {
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[Language];
     }
+
 }
